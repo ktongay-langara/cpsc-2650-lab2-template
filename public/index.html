@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.6">
+  <title>Signup example · Bootstrap</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <h2>Signup form</h2>
+      <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 order-md-1">
+        <h4 class="mb-3">Information</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">Country</label>
+              <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choose...</option>
+              <option>Canada</option>
+            </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="province">Province</label>
+              <select class="custom-select d-block w-100" id="province" required>
+              <option value="">Choose...</option>
+              <option>British Columbia</option>
+            </select>
+              <div class="invalid-feedback">
+                Please provide a valid province.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="postalCode">Postal Code</label>
+              <input type="text" class="form-control" id="postalCode" placeholder="" required>
+              <div class="invalid-feedback">
+                Postal code required.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Signup</button>
+
+          <table id="signups" class="table">
+            <thead>
+              <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Email</th>
+                <th scope="col">Country</th>
+                <th scope="col">Province</th>
+                <th scope="col">Postal Code</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Brian</td>
+                <td>Koehler</td>
+                <td>bkoehler@langara.ca</td>
+                <td>Canada</td>
+                <td>British Columbia</td>
+                <td>V5Y 2Z6</td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2017-2020 Company Name</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="form-validation.js"></script>
+</body>
+
+</html>
